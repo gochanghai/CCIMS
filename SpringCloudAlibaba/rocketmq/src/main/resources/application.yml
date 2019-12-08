@@ -1,0 +1,41 @@
+server:
+  port: 9090
+
+spring:
+  application:
+    name: rocketmq-produce
+  cloud:
+    stream:
+      rocketmq:
+        binder:
+          name-server: 192.168.0.6:9876
+        bindings:
+          output:
+            producer:
+              group: produce-group
+              sync: true
+          output2:
+            producer:
+              group: test-group2
+              sync: true
+      bindings:
+        output:
+          destination: test-topic
+          content-type: application/json
+
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+logging:
+  level:
+    org:
+      springframework:
+        cloud:
+          stream:
+            binder:
+              rocketmq: DEBUG

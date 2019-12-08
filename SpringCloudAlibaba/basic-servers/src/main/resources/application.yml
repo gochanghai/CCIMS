@@ -1,0 +1,25 @@
+#server:
+#  port: 8081
+#spring:
+#  application:
+#    name: basic-servers
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: 192.168.0.6:8848
+#  redis:
+#    database: 0
+#    host: 192.168.0.6
+#    port: 6379
+#    password: lch2199.
+#    lettuce:
+#      pool:
+#        max-active: 8
+#        max-wait: -1
+#        max-idle: 8
+#        min-idle: 0
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"

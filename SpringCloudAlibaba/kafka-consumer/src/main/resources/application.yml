@@ -1,0 +1,18 @@
+
+server:
+  port: 8082
+
+# 指定kafka 代理地址，可以多个
+spring:
+  application:
+    name: kafka-consumer
+  kafka:
+    bootstrap-servers: 192.168.0.6:9092
+    consumer:
+      group-id: test-group
+      auto-offset-reset: latest
+      enable-auto-commit: true
+      auto-commit-interval: 100
+      # 反序列化
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer

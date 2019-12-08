@@ -1,0 +1,20 @@
+server:
+  port: 9099
+spring:
+  application:
+    name: cloud-web
+# 七牛云配置 o
+# bucket是创建的存储空间名
+# prefix/path对应存储空间的访问域名
+qiniu:
+  accessKey: e0tgfo2PWicIByumNbofbvPFpJKe3aMAMNHvWnF1
+  secretKey: eA3qQKKeyp3clgCFlYFCZq4cuSPUwDxnW_ayRF1-
+  bucket: 2199-temp
+  prefix: q06tnjwyn.bkt.clouddn.com
+  path: q06tnjwyn.bkt.clouddn.com
+
+aliyun-oss:
+  endpoint: oss-cn-shenzhen.aliyuncs.com
+  accessKeyId: LTAI4FhUxGHTWZ3XE7bcF2WS
+  accessKeySecret: bsha9dwnJstxd0Ga2l6t8izADfO8Jp
+  bucketName: 2199-temp
