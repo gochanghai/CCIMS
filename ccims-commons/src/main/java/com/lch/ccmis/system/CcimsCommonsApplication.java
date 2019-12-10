@@ -1,4 +1,4 @@
-package com.lch.ccmis.gateway;
+package com.lch.ccmis.system;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
