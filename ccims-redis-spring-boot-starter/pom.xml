@@ -8,9 +8,9 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.lch.ccims</groupId>
-    <artifactId>ccims-demo</artifactId>
+    <artifactId>ccims-redis</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>ccims-demo</name>
+    <name>ccims-redis</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>

@@ -31,6 +31,7 @@
         <spring-boot-dependencies.version>2.2.2.RELEASE</spring-boot-dependencies.version>
         <spring-cloud-alibaba-dependencies.version>2.1.1.RELEASE</spring-cloud-alibaba-dependencies.version>
         <spring-cloud-dependencies.version>Greenwich.SR4</spring-cloud-dependencies.version>
+        <lombok.version>1.18.10</lombok.version>
     </properties>
 
     <dependencyManagement>
@@ -88,6 +89,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
             <optional>true</optional>
         </dependency>
 
