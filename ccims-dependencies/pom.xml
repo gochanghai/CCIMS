@@ -35,6 +35,7 @@
         <commons-pool2.version>2.5.0</commons-pool2.version>
         <hutool.version>[5.0.3,)</hutool.version>
         <commons-lang3.version>3.9</commons-lang3.version>
+        <swagger2.version>2.6.1</swagger2.version>
     </properties>
 
     <dependencyManagement>
@@ -107,6 +108,25 @@
             <artifactId>commons-lang3</artifactId>
             <version>${commons-lang3.version}</version>
         </dependency>
+
+        <!-- swagger start -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${swagger2.version}</version>
+            <!--<exclusions>-->
+                <!--<exclusion>-->
+                    <!--<groupId>com.google.guava</groupId>-->
+                    <!--<artifactId>guava</artifactId>-->
+                <!--</exclusion>-->
+            <!--</exclusions>-->
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${swagger2.version}</version>
+        </dependency>
+        <!-- swagger end -->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
