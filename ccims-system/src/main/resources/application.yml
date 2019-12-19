@@ -12,7 +12,7 @@ server:
 ################################ spring config start ###############################
 spring:
   application:
-    name: ccims-system
+    name: ccims-commons
   http:
     encoding:
       charset: UTF-8
