@@ -16,6 +16,7 @@
     <groupId>com.lch.ccims</groupId>
     <artifactId>ccims-dependencies</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
     <name>ccims-dependencies</name>
     <description>Demo project for Spring Boot</description>
 
