@@ -25,6 +25,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -91,7 +92,7 @@ public class VerificationCodeController {
         String base64 = Base64.getEncoder().encodeToString(outputStream.toByteArray());
         // 生成当前验证码会话token
         String verifyToken = UUIDUtil.getUUID();
-        Map<String, Object> map = new HashMap<>(2);
+        Map<String, Object> map = new HashMap<String, Object>(2);
         map.put(CommonConstant.IMAGE, CommonConstant.BASE64_PREFIX + base64);
         map.put(CommonConstant.VERIFY_TOKEN, verifyToken);
         // 缓存到Redis

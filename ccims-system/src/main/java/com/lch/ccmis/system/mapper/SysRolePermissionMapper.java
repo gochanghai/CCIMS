@@ -19,9 +19,9 @@ package com.lch.ccmis.system.mapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import io.geekidea.springbootplus.system.entity.SysRolePermission;
-import io.geekidea.springbootplus.system.param.SysRolePermissionQueryParam;
-import io.geekidea.springbootplus.system.vo.SysRolePermissionQueryVo;
+import com.lch.ccmis.system.entity.SysRolePermission;
+import com.lch.ccmis.system.param.SysRolePermissionQueryParam;
+import com.lch.ccmis.system.vo.SysRolePermissionQueryVo;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 

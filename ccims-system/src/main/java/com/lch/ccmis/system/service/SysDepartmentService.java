@@ -17,12 +17,11 @@
 package com.lch.ccmis.system.service;
 
 import com.lch.ccmis.commons.service.BaseService;
-import io.geekidea.springbootplus.common.service.BaseService;
-import io.geekidea.springbootplus.common.vo.Paging;
-import io.geekidea.springbootplus.system.entity.SysDepartment;
-import io.geekidea.springbootplus.system.param.SysDepartmentQueryParam;
-import io.geekidea.springbootplus.system.vo.SysDepartmentQueryVo;
-import io.geekidea.springbootplus.system.vo.SysDepartmentTreeVo;
+import com.lch.ccmis.commons.vo.Paging;
+import com.lch.ccmis.system.entity.SysDepartment;
+import com.lch.ccmis.system.param.SysDepartmentQueryParam;
+import com.lch.ccmis.system.vo.SysDepartmentQueryVo;
+import com.lch.ccmis.system.vo.SysDepartmentTreeVo;
 
 import java.io.Serializable;
 import java.util.List;

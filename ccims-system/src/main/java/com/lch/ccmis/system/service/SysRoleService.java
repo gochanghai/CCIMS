@@ -17,13 +17,12 @@
 package com.lch.ccmis.system.service;
 
 import com.lch.ccmis.commons.service.BaseService;
-import io.geekidea.springbootplus.common.service.BaseService;
-import io.geekidea.springbootplus.common.vo.Paging;
-import io.geekidea.springbootplus.system.entity.SysRole;
-import io.geekidea.springbootplus.system.param.SysRoleQueryParam;
-import io.geekidea.springbootplus.system.param.sysrole.AddSysRoleParam;
-import io.geekidea.springbootplus.system.param.sysrole.UpdateSysRoleParam;
-import io.geekidea.springbootplus.system.vo.SysRoleQueryVo;
+import com.lch.ccmis.commons.vo.Paging;
+import com.lch.ccmis.system.entity.SysRole;
+import com.lch.ccmis.system.param.SysRoleQueryParam;
+import com.lch.ccmis.system.param.sysrole.AddSysRoleParam;
+import com.lch.ccmis.system.param.sysrole.UpdateSysRoleParam;
+import com.lch.ccmis.system.vo.SysRoleQueryVo;
 
 import java.io.Serializable;
 

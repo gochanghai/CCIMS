@@ -72,11 +72,11 @@ public class EnumController {
             }
             // 循环获取BaseEnum枚举
             for (Class<? extends BaseEnum> clazz : set) {
-                List<EnumVo> list = new ArrayList<>();
+                List<EnumVo> list = new ArrayList<EnumVo>();
                 Object[] objects = clazz.getEnumConstants();
                 Method codeMethod = clazz.getDeclaredMethod("getCode");
                 Method descMethod = clazz.getDeclaredMethod("getDesc");
-                Map<Integer, String> codeDescMap = new HashMap<>(objects.length);
+                Map<Integer, String> codeDescMap = new HashMap<Integer, String>(objects.length);
                 for (Object object : objects) {
                     Integer code = (Integer) codeMethod.invoke(object);
                     String desc = (String) descMethod.invoke(object);

@@ -70,6 +70,21 @@ spring:
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
+  ################################ redis begin ##################################
+  redis:
+    database: 1
+    host: 192.168.0.103
+    port: 6379
+    password: zwjk#Dev
+    timeout: 10s
+    lettuce:
+      pool:
+        max-active: 32
+        max-wait: 300ms
+        max-idle: 16
+        min-idle: 8
+      shutdown-timeout: 3s
+  ################################ redis stop ##################################
 ################################ spring config end #################################
 
 ############################### mybatis-plus start #################################

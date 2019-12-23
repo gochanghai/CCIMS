@@ -17,12 +17,11 @@
 package com.lch.ccmis.system.service;
 
 import com.lch.ccmis.commons.service.BaseService;
-import io.geekidea.springbootplus.common.service.BaseService;
-import io.geekidea.springbootplus.common.vo.Paging;
-import io.geekidea.springbootplus.system.entity.SysUser;
-import io.geekidea.springbootplus.system.param.SysUserQueryParam;
-import io.geekidea.springbootplus.system.param.UpdatePasswordParam;
-import io.geekidea.springbootplus.system.vo.SysUserQueryVo;
+import com.lch.ccmis.commons.vo.Paging;
+import com.lch.ccmis.system.entity.SysUser;
+import com.lch.ccmis.system.param.SysUserQueryParam;
+import com.lch.ccmis.system.param.UpdatePasswordParam;
+import com.lch.ccmis.system.vo.SysUserQueryVo;
 
 import java.io.Serializable;
 

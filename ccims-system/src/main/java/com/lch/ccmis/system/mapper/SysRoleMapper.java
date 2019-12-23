@@ -16,12 +16,12 @@
 
 package com.lch.ccmis.system.mapper;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import io.geekidea.springbootplus.system.entity.SysRole;
-import io.geekidea.springbootplus.system.param.SysRoleQueryParam;
-import io.geekidea.springbootplus.system.vo.SysRoleQueryVo;
+import com.lch.ccmis.system.entity.SysRole;
+import com.lch.ccmis.system.param.SysRoleQueryParam;
+import com.lch.ccmis.system.vo.SysRoleQueryVo;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 

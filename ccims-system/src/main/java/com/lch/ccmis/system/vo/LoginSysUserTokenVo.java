@@ -15,8 +15,6 @@
  */
 
 package com.lch.ccmis.system.vo;
-
-import io.geekidea.springbootplus.shiro.vo.LoginSysUserVo;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
