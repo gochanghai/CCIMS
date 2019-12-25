@@ -17,13 +17,9 @@
 package com.lch.ccmis.commons.exception;
 
 import com.alibaba.fastjson.JSON;
-import io.geekidea.springbootplus.common.api.ApiCode;
-import io.geekidea.springbootplus.common.api.ApiResult;
-import io.geekidea.springbootplus.system.exception.VerificationCodeException;
+import com.lch.ccmis.commons.api.ApiCode;
+import com.lch.ccmis.commons.api.ApiResult;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.shiro.authc.AuthenticationException;
-import org.apache.shiro.authz.UnauthenticatedException;
-import org.apache.shiro.authz.UnauthorizedException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.validation.BindingResult;

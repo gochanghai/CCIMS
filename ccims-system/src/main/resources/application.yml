@@ -12,7 +12,7 @@ server:
 ################################ spring config start ###############################
 spring:
   application:
-    name: ccims-commons
+    name: ccims-system
   http:
     encoding:
       charset: UTF-8
@@ -70,7 +70,7 @@ spring:
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
-  ################################ redis begin ##################################
+  ################################ redismq begin ##################################
   redis:
     database: 1
     host: 192.168.0.103
@@ -84,7 +84,7 @@ spring:
         max-idle: 16
         min-idle: 8
       shutdown-timeout: 3s
-  ################################ redis stop ##################################
+  ################################ redismq stop ##################################
 ################################ spring config end #################################
 
 ############################### mybatis-plus start #################################

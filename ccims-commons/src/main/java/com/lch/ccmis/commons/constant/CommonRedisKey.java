@@ -18,7 +18,7 @@ package com.lch.ccmis.commons.constant;
 
 /**
  * <p>
- *  redis key 常量
+ *  redismq key 常量
  * </p>
  * @author geekidea
  * @date 2019-05-23
