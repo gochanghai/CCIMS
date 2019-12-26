@@ -1,4 +1,4 @@
-package com.lch.ccims.redismq;
+package com.lch.ccims.redis;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

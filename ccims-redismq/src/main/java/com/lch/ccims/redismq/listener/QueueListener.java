@@ -1,6 +1,7 @@
-package com.lch.ccims.redismq.commons;
+package com.lch.ccims.redismq.listener;
 
-import lombok.extern.slf4j.Slf4j;
+import com.lch.ccims.redismq.service.MsgConsumer;
+import com.lch.ccims.redismq.service.RedisMqConsumerContainer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.dao.QueryTimeoutException;
@@ -8,15 +9,11 @@ import org.springframework.data.redis.core.RedisTemplate;
 
 import java.util.concurrent.TimeUnit;
 
-@Slf4j
 public class QueueListener implements Runnable {
 
     public static final Logger log = LoggerFactory.getLogger(QueueListener.class);
-
     private RedisTemplate<Object, Object> redisTemplate;
-
     private String queue;
-
     private MsgConsumer consumer;
 
     public QueueListener(RedisTemplate<Object, Object> redisTemplate, String queue, MsgConsumer consumer) {

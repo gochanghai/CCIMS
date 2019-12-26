@@ -1,29 +1,34 @@
 package com.lch.ccims.redismq.controller;
 
+import com.lch.ccims.redismq.service.MsgSender;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import redis.clients.jedis.JedisCluster;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.UUID;
 
-@RequestMapping("/redis/producer")
-@Controller
+@RestController
+@RequestMapping("producer")
 public class ProducerController {
 
     @Autowired
-    private JedisCluster jedisCluster;
+    private MsgSender msgSender;
 
     /**
      * 发布消息
-     * @param id
      * @return
      */
-    @RequestMapping("/sendMessage/{id}")
-    public String sendMessage(@PathVariable String id) {
+    @PostMapping("sendMessage")
+    public String sendMessage(@RequestBody String dto) {
+
         String uuid = UUID.randomUUID().toString().replaceAll("-", "");
-        jedisCluster.lpush("producerList","value_" + uuid);
-        return uuid;
+//        msgSender.sendMsg("TEST","哈哈哈，redis 订阅信息: [s%]" + dto);
+        System.out.println(uuid);
+        System.out.println(dto);
+        return "ok" + uuid;
     }
 }
+
+

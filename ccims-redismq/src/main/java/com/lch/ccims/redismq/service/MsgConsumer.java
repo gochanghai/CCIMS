@@ -1,5 +1,9 @@
-package com.lch.ccims.redismq.commons;
+package com.lch.ccims.redismq.service;
 
+
+/**
+ * 消费者接口
+ */
 public interface MsgConsumer {
 
     void onMessage(Object message);

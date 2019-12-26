@@ -5,6 +5,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.UUID;
@@ -17,12 +18,13 @@ public class RedisController {
     private RedisTemplate<String, String> redisTemplate;
 
     @RequestMapping("/index")
-    public String redisIndex() {
+    public String redisIndex(@RequestBody String data) {
         ValueOperations<String, String> ops = redisTemplate.opsForValue();
         ops.set("user", "user2");
         String str = ops.get("a");
         System.out.println("redis server str:" + str);
-        return null;
+        System.out.println(data);
+        return "ok";
     }
 
     /**

@@ -1,4 +1,4 @@
-package com.lch.ccims.redismq.service;
+package com.lch.ccims.redis.service;
 
 import java.util.List;
 import java.util.Map;
