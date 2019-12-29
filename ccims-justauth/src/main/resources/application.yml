@@ -1,0 +1,19 @@
+
+justauth:
+  enabled: true
+  type:
+    qq:
+      client-id: 10**********6
+      client-secret: 1f7d08**********5b7**********29e
+      redirect-uri: http://oauth.xkcoding.com/demo/oauth/qq/callback
+    wechat:
+      client-id: wxdcb******4ff4
+      client-secret: b4e9dc************************a08ed6d
+      redirect-uri: http://oauth.xkcoding.com/demo/oauth/wechat/callback
+    wechat_enterprise:
+      client-id: ww58******f3************fbc
+      client-secret: 8G6PCr00j************************rgk************AyzaPc78
+      redirect-uri: http://oauth.xkcoding.com/demo/oauth/wechat_enterprise/callback
+      agent-id: 1*******2
+  cache:
+    type: default
