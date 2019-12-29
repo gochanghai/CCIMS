@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.lch.ccims</groupId>
-    <artifactId>ccims-redismq</artifactId>
+    <artifactId>ccims-justauth</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>ccims-redismq</name>
+    <name>ccims-justauth</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -27,7 +27,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        <!-- redismq begin -->
+        <!-- redis begin -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
@@ -36,17 +36,14 @@
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-pool2</artifactId>
         </dependency>
-        <!--<dependency>-->
-            <!--<groupId>redis.clients</groupId>-->
-            <!--<artifactId>jedis</artifactId>-->
-            <!--<version>3.1.0</version>-->
-        <!--</dependency>-->
-        <!-- redismq end -->
+        <!-- redis end -->
+        <!-- justauth begin -->
         <dependency>
             <groupId>com.xkcoding</groupId>
             <artifactId>justauth-spring-boot-starter</artifactId>
             <version>1.3.2</version>
         </dependency>
+        <!-- justauth end  -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
