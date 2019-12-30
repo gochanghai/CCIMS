@@ -147,8 +147,8 @@ public class SysRoleServiceImpl extends BaseServiceImpl<SysRoleMapper, SysRole> 
 
         // 删除权限关联
         UpdateWrapper updateWrapper = new UpdateWrapper();
-        updateWrapper.eq("role_id",roleId);
-        updateWrapper.in("permission_id",deleteSet);
+        updateWrapper.eq("role_id", roleId);
+        updateWrapper.in("permission_id", deleteSet);
         boolean deleteResult = sysRolePermissionService.remove(updateWrapper);
         if (!deleteResult) {
             throw new DaoException("删除角色权限关系失败");

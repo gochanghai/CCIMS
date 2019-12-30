@@ -92,6 +92,7 @@ public interface SysRoleService extends BaseService<SysRole> {
 
     /**
      * 判断角色编码是否存在
+     *
      * @param code
      * @return
      * @throws Exception

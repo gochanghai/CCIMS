@@ -29,13 +29,14 @@ public class RedisController {
 
     /**
      * 发布消息
+     *
      * @param id
      * @return
      */
     @RequestMapping("/sendMessage/{id}")
     public String sendMessage(@PathVariable String id) {
         String uuid = UUID.randomUUID().toString().replaceAll("-", "");
-        redisTemplate.convertAndSend("msg","哈哈哈，redis 订阅信息: [s%]" + uuid);
+        redisTemplate.convertAndSend("msg", "哈哈哈，redis 订阅信息: [s%]" + uuid);
         return "";
     }
 }

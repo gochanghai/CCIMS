@@ -74,10 +74,10 @@
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
             <!--<exclusions>-->
-                <!--<exclusion>-->
-                    <!--<groupId>com.google.guava</groupId>-->
-                    <!--<artifactId>guava</artifactId>-->
-                <!--</exclusion>-->
+            <!--<exclusion>-->
+            <!--<groupId>com.google.guava</groupId>-->
+            <!--<artifactId>guava</artifactId>-->
+            <!--</exclusion>-->
             <!--</exclusions>-->
         </dependency>
         <dependency>
@@ -118,15 +118,15 @@
         </repository>
         <!--中央仓库-->
         <!--<repository>-->
-            <!--<id>oss snapshot</id>-->
-            <!--<name>oss snapshot</name>-->
-            <!--<url>http://oss.sonatype.org/content/repositories/snapshots</url>-->
-            <!--<releases>-->
-                <!--<enabled>true</enabled>-->
-            <!--</releases>-->
-            <!--<snapshots>-->
-                <!--<enabled>true</enabled>-->
-            <!--</snapshots>-->
+        <!--<id>oss snapshot</id>-->
+        <!--<name>oss snapshot</name>-->
+        <!--<url>http://oss.sonatype.org/content/repositories/snapshots</url>-->
+        <!--<releases>-->
+        <!--<enabled>true</enabled>-->
+        <!--</releases>-->
+        <!--<snapshots>-->
+        <!--<enabled>true</enabled>-->
+        <!--</snapshots>-->
         <!--</repository>-->
     </repositories>
 

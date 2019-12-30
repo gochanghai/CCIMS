@@ -21,12 +21,13 @@ import lombok.EqualsAndHashCode;
 
 /**
  * 自定义异常
+ *
  * @author geekidea
  * @date 2018-11-08
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
-public class SpringBootPlusException extends RuntimeException{
+public class SpringBootPlusException extends RuntimeException {
     private Integer errorCode;
     private String message;
 

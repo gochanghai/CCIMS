@@ -124,9 +124,9 @@ public class SysUserController extends BaseController {
      */
     @PostMapping("/uploadHead/{id}")
 //    @RequiresPermissions("sys:user:update:head")
-    @ApiOperation(value = "修改头像",notes = "修改头像",response = ApiResult.class)
+    @ApiOperation(value = "修改头像", notes = "修改头像", response = ApiResult.class)
     public ApiResult<Boolean> uploadHead(@PathVariable("id") Long id,
-                                         @RequestParam("head") MultipartFile multipartFile) throws Exception{
+                                         @RequestParam("head") MultipartFile multipartFile) throws Exception {
         log.info("multipartFile = " + multipartFile);
         log.info("ContentType = " + multipartFile.getContentType());
         log.info("OriginalFilename = " + multipartFile.getOriginalFilename());

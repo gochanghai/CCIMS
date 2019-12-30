@@ -56,8 +56,8 @@ public class SysRoleController extends BaseController {
 //    @RequiresPermissions("sys:role:add")
     @ApiOperation(value = "添加SysRole对象", notes = "添加系统角色", response = ApiResult.class)
     public ApiResult<Boolean> addSysRole(@Valid @RequestBody AddSysRoleParam addSysRoleParam) throws Exception {
-            boolean flag = sysRoleService.saveSysRole(addSysRoleParam);
-            return ApiResult.result(flag);
+        boolean flag = sysRoleService.saveSysRole(addSysRoleParam);
+        return ApiResult.result(flag);
     }
 
     /**
@@ -67,8 +67,8 @@ public class SysRoleController extends BaseController {
 //    @RequiresPermissions("sys:role:update")
     @ApiOperation(value = "修改SysRole对象", notes = "修改系统角色", response = ApiResult.class)
     public ApiResult<Boolean> updateSysRole(@Valid @RequestBody UpdateSysRoleParam updateSysRoleParam) throws Exception {
-            boolean flag = sysRoleService.updateSysRole(updateSysRoleParam);
-            return ApiResult.result(flag);
+        boolean flag = sysRoleService.updateSysRole(updateSysRoleParam);
+        return ApiResult.result(flag);
     }
 
     /**
@@ -78,8 +78,8 @@ public class SysRoleController extends BaseController {
 //    @RequiresPermissions("sys:role:delete")
     @ApiOperation(value = "删除SysRole对象", notes = "删除系统角色", response = ApiResult.class)
     public ApiResult<Boolean> deleteSysRole(@PathVariable("id") Long id) throws Exception {
-            boolean flag = sysRoleService.deleteSysRole(id);
-            return ApiResult.result(flag);
+        boolean flag = sysRoleService.deleteSysRole(id);
+        return ApiResult.result(flag);
     }
 
     /**

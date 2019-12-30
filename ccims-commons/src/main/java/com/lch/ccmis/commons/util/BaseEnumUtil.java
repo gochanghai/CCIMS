@@ -51,8 +51,8 @@ public class BaseEnumUtil {
      * @return
      */
     public static Set<Integer> getCodeSet(Class<? extends BaseEnum> clazz) {
-        Map<Integer, String> map =  enumClassMap.get(clazz.getName());
-        if (MapUtils.isEmpty(map)){
+        Map<Integer, String> map = enumClassMap.get(clazz.getName());
+        if (MapUtils.isEmpty(map)) {
             return null;
         }
         return map.keySet();
@@ -65,8 +65,8 @@ public class BaseEnumUtil {
      * @return
      */
     public static Collection<String> getDescList(Class<? extends BaseEnum> clazz) {
-        Map<Integer, String> map =  enumClassMap.get(clazz.getName());
-        if (MapUtils.isEmpty(map)){
+        Map<Integer, String> map = enumClassMap.get(clazz.getName());
+        if (MapUtils.isEmpty(map)) {
             return null;
         }
         return map.values();
@@ -113,11 +113,11 @@ public class BaseEnumUtil {
         return !exists(clazz, code);
     }
 
-    public static Map<String, List<EnumVo>> getEnumMap(){
+    public static Map<String, List<EnumVo>> getEnumMap() {
         return enumMap;
     }
 
-    public static Map<String, Map<Integer, String>> getEnumClassMap(){
+    public static Map<String, Map<Integer, String>> getEnumClassMap() {
         return enumClassMap;
     }
 

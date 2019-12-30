@@ -33,7 +33,7 @@ public class AnsiUtil {
         Boolean value = false;
         try {
             Environment environment = SpringContextUtil.getBean(Environment.class);
-            value = environment.getProperty("spring-boot-plus.enable-ansi",boolean.class);
+            value = environment.getProperty("spring-boot-plus.enable-ansi", boolean.class);
             value = value == null ? false : value;
         } catch (Exception e) {
             e.printStackTrace();
@@ -41,16 +41,16 @@ public class AnsiUtil {
         enableAnsi = value;
     }
 
-    public static String getAnsi(Ansi.Color color,String text){
+    public static String getAnsi(Ansi.Color color, String text) {
 
-        if (enableAnsi){
+        if (enableAnsi) {
             return Ansi.ansi().eraseScreen().fg(color).a(text).reset().toString();
         }
         return text;
     }
 
-    public static String getAnsi(Ansi.Color color,String text,boolean flag){
-        if (flag){
+    public static String getAnsi(Ansi.Color color, String text, boolean flag) {
+        if (flag) {
             return Ansi.ansi().eraseScreen().fg(color).a(text).reset().toString();
         }
         return text;

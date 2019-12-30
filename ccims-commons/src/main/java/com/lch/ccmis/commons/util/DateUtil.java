@@ -35,8 +35,8 @@ public class DateUtil {
     public static final String formatStr_yyyy_MM_dd = "yyyyMMdd";
     public static final String formatStr_yyyyMMddDelimiter = "-";
 
-    public static String getYYYYMMDDHHMMSS(Date date){
-        if (date == null){
+    public static String getYYYYMMDDHHMMSS(Date date) {
+        if (date == null) {
             return null;
         }
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");

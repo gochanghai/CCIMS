@@ -23,8 +23,9 @@ import org.springframework.core.env.ConfigurableEnvironment;
 
 /**
  * <p>
- *  打印项目信息
+ * 打印项目信息
  * </p>
+ *
  * @author geekidea
  * @date 2019-05-08
  **/
@@ -35,7 +36,7 @@ public class PrintApplicationInfo {
     /**
      * 执行之前，打印前置条件提示
      */
-    public static void printTip(){
+    public static void printTip() {
         StringBuffer tip = new StringBuffer();
         tip.append("======================================================================================\n");
         tip.append("                                                                                  \n");
@@ -46,13 +47,13 @@ public class PrintApplicationInfo {
         tip.append(" 4.更多注意事项：请查看: https://springboot.plus                                                                                 \n");
         tip.append("                                                                                  \n");
         tip.append("======================================================================================\n");
-        log.info("\n{}",Ansi.ansi().eraseScreen().fg(Ansi.Color.YELLOW).a(tip.toString()).reset().toString());
+        log.info("\n{}", Ansi.ansi().eraseScreen().fg(Ansi.Color.YELLOW).a(tip.toString()).reset().toString());
     }
 
     /**
      * 启动成功之后，打印项目信息
      */
-    public static void print(ConfigurableApplicationContext context){
+    public static void print(ConfigurableApplicationContext context) {
         ConfigurableEnvironment environment = context.getEnvironment();
 
         // 项目名称
@@ -66,11 +67,11 @@ public class PrintApplicationInfo {
         // 项目端口
         String port = environment.getProperty("server.port");
 
-        log.info("projectFinalName : {}",projectFinalName);
-        log.info("projectVersion : {}",projectVersion);
-        log.info("profileActive : {}",profileActive);
-        log.info("contextPath : {}",contextPath);
-        log.info("port : {}",port);
+        log.info("projectFinalName : {}", projectFinalName);
+        log.info("projectVersion : {}", projectVersion);
+        log.info("profileActive : {}", profileActive);
+        log.info("contextPath : {}", contextPath);
+        log.info("port : {}", port);
 
         String startSuccess = " ____    __                    __        ____                                                   \n" +
                 "/\\  _`\\ /\\ \\__                /\\ \\__    /\\  _`\\                                                 \n" +
@@ -84,10 +85,10 @@ public class PrintApplicationInfo {
 
         String homeUrl = "http://" + IpUtil.getLocalhostIp() + ":" + port + contextPath;
         String swaggerUrl = "http://" + IpUtil.getLocalhostIp() + ":" + port + contextPath + "docs";
-        log.info("home:{}",homeUrl);
-        log.info("docs:{}",swaggerUrl);
+        log.info("home:{}", homeUrl);
+        log.info("docs:{}", swaggerUrl);
         log.info("spring-boot-plus project start success...........");
-        log.info("\n{}",AnsiUtil.getAnsi(Ansi.Color.BLUE,startSuccess));
+        log.info("\n{}", AnsiUtil.getAnsi(Ansi.Color.BLUE, startSuccess));
     }
 
 }

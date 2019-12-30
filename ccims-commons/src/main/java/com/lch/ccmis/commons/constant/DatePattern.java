@@ -18,8 +18,9 @@ package com.lch.ccmis.commons.constant;
 
 /**
  * <p>
- *     日期格式常量
+ * 日期格式常量
  * </p>
+ *
  * @author geekidea
  * @date 2018-11-08
  */

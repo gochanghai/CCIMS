@@ -23,6 +23,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * Spring工具类,获取Spring上下文对象等
+ *
  * @author geekidea
  * @date 2018-11-08
  */
@@ -33,8 +34,8 @@ public class SpringContextUtil implements ApplicationContextAware {
 
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-        if(SpringContextUtil.applicationContext == null){
-            SpringContextUtil.applicationContext  = applicationContext;
+        if (SpringContextUtil.applicationContext == null) {
+            SpringContextUtil.applicationContext = applicationContext;
         }
     }
 
@@ -42,15 +43,15 @@ public class SpringContextUtil implements ApplicationContextAware {
         return applicationContext;
     }
 
-    public static Object getBean(String name){
+    public static Object getBean(String name) {
         return getApplicationContext().getBean(name);
     }
 
-    public static <T> T getBean(Class<T> clazz){
+    public static <T> T getBean(Class<T> clazz) {
         return getApplicationContext().getBean(clazz);
     }
 
-    public static <T> T getBean(String name,Class<T> clazz){
+    public static <T> T getBean(String name, Class<T> clazz) {
         return getApplicationContext().getBean(name, clazz);
     }
 }

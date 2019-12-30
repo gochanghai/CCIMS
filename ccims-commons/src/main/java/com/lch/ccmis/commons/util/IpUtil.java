@@ -25,16 +25,18 @@ import java.net.UnknownHostException;
 
 /**
  * 获取IP地址工具类
+ *
  * @author geekidea
  * @date 2018-11-08
  */
 public final class IpUtil {
-    private IpUtil(){
+    private IpUtil() {
         throw new AssertionError();
     }
 
     /**
      * 获取请求用户的IP地址
+     *
      * @return
      */
     public static String getRequestIp() {
@@ -45,6 +47,7 @@ public final class IpUtil {
 
     /**
      * 获取请求用户的IP地址
+     *
      * @param request
      * @return
      */
@@ -60,13 +63,13 @@ public final class IpUtil {
             ip = request.getRemoteAddr();
         }
 
-        if ("0:0:0:0:0:0:0:1".equals(ip)){
+        if ("0:0:0:0:0:0:0:1".equals(ip)) {
             ip = getLocalhostIp();
         }
         return ip;
     }
 
-    public static String getLocalhostIp(){
+    public static String getLocalhostIp() {
         try {
             return InetAddress.getLocalHost().getHostAddress();
         } catch (UnknownHostException e) {

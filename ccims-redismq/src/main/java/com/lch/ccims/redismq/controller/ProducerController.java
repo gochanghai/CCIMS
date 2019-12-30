@@ -18,6 +18,7 @@ public class ProducerController {
 
     /**
      * 发布消息
+     *
      * @return
      */
     @PostMapping("sendMessage")

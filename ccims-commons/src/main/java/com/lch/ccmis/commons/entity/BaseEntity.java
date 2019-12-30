@@ -22,9 +22,10 @@ import java.io.Serializable;
 
 /**
  * 实体父类
+ *
  * @author geekidea
  * @date 2018-11-08
  */
 @ApiModel("BaseEntity")
-public abstract class BaseEntity implements Serializable{
+public abstract class BaseEntity implements Serializable {
 }

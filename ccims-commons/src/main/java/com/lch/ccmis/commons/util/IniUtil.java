@@ -30,7 +30,7 @@ import java.util.Map;
  * @since 1.3.0.RELEASE
  **/
 public class IniUtil {
-    public static Map<String,String> parseIni(String string) {
+    public static Map<String, String> parseIni(String string) {
         Config config = new Config();
         config.setGlobalSection(true);
         config.setGlobalSectionName("");
@@ -46,7 +46,7 @@ public class IniUtil {
         return null;
     }
 
-    public static Map<String,String> parseIni(String sectionName,String string) {
+    public static Map<String, String> parseIni(String sectionName, String string) {
         Ini ini = new Ini();
         try {
             ini.load(new StringReader(string));

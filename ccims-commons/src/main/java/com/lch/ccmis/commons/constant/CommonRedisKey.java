@@ -18,8 +18,9 @@ package com.lch.ccmis.commons.constant;
 
 /**
  * <p>
- *  redismq key 常量
+ * redismq key 常量
  * </p>
+ *
  * @author geekidea
  * @date 2019-05-23
  **/
@@ -38,7 +39,7 @@ public interface CommonRedisKey {
     /**
      * 登陆用户盐值信息key
      */
-    String LOGIN_SALT= "login:salt:%s";
+    String LOGIN_SALT = "login:salt:%s";
 
     /**
      * 登陆用户username token

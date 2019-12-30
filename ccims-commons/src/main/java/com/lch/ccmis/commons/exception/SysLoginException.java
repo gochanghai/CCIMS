@@ -18,16 +18,18 @@ package com.lch.ccmis.commons.exception;
 
 /**
  * 系统登录异常
+ *
  * @author geekidea
  * @date 2019-08-04
  */
-public class SysLoginException extends SpringBootPlusException{
+public class SysLoginException extends SpringBootPlusException {
 
     public SysLoginException(String message) {
         super(message);
     }
+
     public SysLoginException(Integer errorCode, String message) {
-        super(errorCode,message);
+        super(errorCode, message);
     }
 
 }

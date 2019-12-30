@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.lch.ccims</groupId>
+    <artifactId>ccims</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <!-- 依赖管理 -->
+        <module>ccims-dependencies</module>
+        <!-- 公共 -->
+        <module>ccims-commons</module>
+        <!-- 网关 -->
+        <module>ccims-gateway</module>
+        <!-- 系统管理 -->
+        <module>ccims-system</module>
+        <!-- web-feign 服务  -->
+        <module>ccims-web-service</module>
+        <!-- redismq 服务  -->
+        <module>ccims-redis</module>
+        <!-- 业务 -->
+        <!--<module>ccims-business</module>-->
+        <!-- 前端 -->
+        <!--<module>ccims-web</module>-->
+        <!-- 任务 -->
+        <!--<module>ccims-job</module>-->
+        <!-- 监控 -->
+        <!--<module>ccims-monitor</module>-->
+        <!-- 事务 -->
+        <!--<module>ccims-transaction</module>-->
+        <!-- 配置 -->
+        <!--<module>ccims-config</module>-->
+        <!-- redismq -->
+        <module>ccims-demo</module>
+
+        <module>ccims-eureka</module>
+        <!-- redismq -->
+        <module>ccims-redismq</module>
+        <!-- justauth -->
+        <module>ccims-justauth</module>
+    </modules>
+
+    <repositories>
+        <repository>
+            <id>aliyun-repos</id>
+            <url>https://maven.aliyun.com/repository/public</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+</project>

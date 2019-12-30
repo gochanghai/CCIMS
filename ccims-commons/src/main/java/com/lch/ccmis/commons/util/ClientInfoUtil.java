@@ -27,8 +27,9 @@ import java.util.regex.Pattern;
 
 /**
  * <p>
- *  用户客户端信息工具类
+ * 用户客户端信息工具类
  * </p>
+ *
  * @author geekidea
  * @date 2019-05-24
  **/
@@ -36,20 +37,22 @@ public class ClientInfoUtil {
 
     /**
      * 获取用户客户端信息
+     *
      * @param request
      * @return
      */
-    public static ClientInfo get(HttpServletRequest request){
+    public static ClientInfo get(HttpServletRequest request) {
         String userAgent = request.getHeader("User-Agent");
         return get(userAgent);
     }
 
     /**
      * 获取用户客户端信息
+     *
      * @param userAgentString
      * @return
      */
-    public static ClientInfo get(String userAgentString){
+    public static ClientInfo get(String userAgentString) {
         ClientInfo clientInfo = new ClientInfo();
 
         UserAgent userAgent = UserAgentUtil.parse(userAgentString);
@@ -83,10 +86,11 @@ public class ClientInfoUtil {
 
     /**
      * 获取移动端用户设备的名称和机型
+     *
      * @param userAgentString
      * @return
      */
-    public static DeviceInfo getDeviceInfo(String userAgentString){
+    public static DeviceInfo getDeviceInfo(String userAgentString) {
         DeviceInfo deviceInfo = new DeviceInfo();
         try {
             Pattern pattern = Pattern.compile(";\\s?(\\S*?\\s?\\S*?)\\s?Build/(\\S*?)[;)]");
@@ -99,14 +103,14 @@ public class ClientInfoUtil {
                 name = matcher.group(2);
             }
 
-            if (model == null && name == null){
+            if (model == null && name == null) {
                 pattern = Pattern.compile(";\\s?(\\S*?\\s?\\S*?)\\s?\\)");
                 matcher = pattern.matcher(userAgentString);
                 if (matcher.find()) {
                     model = matcher.group(1);
                 }
             }
-           
+
             deviceInfo.setName(name);
             deviceInfo.setModel(model);
         } catch (Exception e) {

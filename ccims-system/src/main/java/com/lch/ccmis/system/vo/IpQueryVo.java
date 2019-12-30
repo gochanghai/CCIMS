@@ -19,6 +19,7 @@ package com.lch.ccmis.system.vo;
 import io.swagger.annotations.ApiModel;
 import lombok.Data;
 import lombok.experimental.Accessors;
+
 import java.io.Serializable;
 
 /**
@@ -35,18 +36,18 @@ import java.io.Serializable;
 public class IpQueryVo implements Serializable {
     private static final long serialVersionUID = 1L;
 
-private String ipStart;
+    private String ipStart;
 
-private String ipEnd;
+    private String ipEnd;
 
-private String area;
+    private String area;
 
-private String operator;
+    private String operator;
 
-private Long id;
+    private Long id;
 
-private Long ipStartNum;
+    private Long ipStartNum;
 
-private Long ipEndNum;
+    private Long ipEndNum;
 
 }

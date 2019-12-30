@@ -32,6 +32,7 @@ import java.util.Properties;
 /**
  * 获取文件的内容类型
  * mime-type参考：https://svn.apache.org/viewvc/httpd/httpd/trunk/docs/conf/mime.types?revision=1752884&view=co
+ *
  * @author geekidea
  * @date 2019/08/20
  * @since
@@ -49,36 +50,37 @@ public final class ContentTypeUtil {
         try {
             properties = PropertiesLoaderUtils.loadProperties(new ClassPathResource(MIME_TYPE_CONFIG_FILE));
         } catch (IOException e) {
-            log.error("读取配置文件" + MIME_TYPE_CONFIG_FILE + "异常",e);
+            log.error("读取配置文件" + MIME_TYPE_CONFIG_FILE + "异常", e);
         }
         log.info(MIME_TYPE_CONFIG_FILE + " = " + properties);
     }
 
     /**
      * 获取文件内容类型
+     *
      * @param file
      * @return
      */
-    public static String getContentType(File file){
-        if (file == null){
+    public static String getContentType(File file) {
+        if (file == null) {
             return null;
         }
         Path path = Paths.get(file.toURI());
-        if (path == null){
+        if (path == null) {
             return null;
         }
         String contentType = null;
         try {
             contentType = Files.probeContentType(path);
         } catch (IOException e) {
-            log.error("获取文件ContentType异常",e);
+            log.error("获取文件ContentType异常", e);
         }
-        if (contentType == null){
+        if (contentType == null) {
             // 读取拓展的自定义配置
             contentType = getContentTypeByExtension(file);
         }
         // 设置默认的内容类型
-        if (contentType == null){
+        if (contentType == null) {
             contentType = DEFAULT_MIME_TYPE;
         }
         return contentType;
@@ -86,15 +88,16 @@ public final class ContentTypeUtil {
 
     /**
      * 根据文件后缀获取自定义配置的文件mime-type
+     *
      * @param file
      * @return
      */
-    private static String getContentTypeByExtension(File file){
-        if (properties == null){
+    private static String getContentTypeByExtension(File file) {
+        if (properties == null) {
             return null;
         }
         String extension = FilenameUtils.getExtension(file.getName());
-        if (StringUtils.isBlank(extension)){
+        if (StringUtils.isBlank(extension)) {
             return null;
         }
         String contentType = properties.getProperty(extension);

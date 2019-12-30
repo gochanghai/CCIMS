@@ -92,12 +92,14 @@ public interface SysDepartmentService extends BaseService<SysDepartment> {
 
     /**
      * 获取所有可用的部门列表
+     *
      * @return
      */
     List<SysDepartment> getAllDepartmentList();
 
     /**
      * 获取所有可用的部门树形列表
+     *
      * @return
      */
     List<SysDepartmentTreeVo> getAllDepartmentTree();

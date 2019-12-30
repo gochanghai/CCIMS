@@ -18,16 +18,18 @@ package com.lch.ccmis.commons.exception;
 
 /**
  * DAO异常
+ *
  * @author geekidea
  * @date 2018-11-08
  */
-public class DaoException extends SpringBootPlusException{
+public class DaoException extends SpringBootPlusException {
 
     public DaoException(String message) {
         super(message);
     }
+
     public DaoException(Integer errorCode, String message) {
-        super(errorCode,message);
+        super(errorCode, message);
     }
 
 }

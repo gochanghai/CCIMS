@@ -28,9 +28,9 @@ spring:
     port: 6379
     password: lch2199.
     timeout: 200
-    #commandTimeout: 5000
+      #commandTimeout: 5000
     #cluster:
-      #nodes: 119.23.105.191:6379
+    #nodes: 119.23.105.191:6379
     lettuce:
       pool:
         max-active: 32

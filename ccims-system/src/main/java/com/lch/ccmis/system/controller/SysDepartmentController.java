@@ -57,8 +57,8 @@ public class SysDepartmentController extends BaseController {
 //    @RequiresPermissions("sys:department:add")
     @ApiOperation(value = "添加SysDepartment对象", notes = "添加部门", response = ApiResult.class)
     public ApiResult<Boolean> addSysDepartment(@Valid @RequestBody SysDepartment sysDepartment) throws Exception {
-            boolean flag = sysDepartmentService.saveSysDepartment(sysDepartment);
-            return ApiResult.result(flag);
+        boolean flag = sysDepartmentService.saveSysDepartment(sysDepartment);
+        return ApiResult.result(flag);
     }
 
     /**
@@ -68,8 +68,8 @@ public class SysDepartmentController extends BaseController {
 //    @RequiresPermissions("sys:department:update")
     @ApiOperation(value = "修改SysDepartment对象", notes = "修改部门", response = ApiResult.class)
     public ApiResult<Boolean> updateSysDepartment(@Valid @RequestBody SysDepartment sysDepartment) throws Exception {
-            boolean flag = sysDepartmentService.updateSysDepartment(sysDepartment);
-            return ApiResult.result(flag);
+        boolean flag = sysDepartmentService.updateSysDepartment(sysDepartment);
+        return ApiResult.result(flag);
     }
 
     /**
@@ -79,8 +79,8 @@ public class SysDepartmentController extends BaseController {
 //    @RequiresPermissions("sys:department:delete")
     @ApiOperation(value = "删除SysDepartment对象", notes = "删除部门", response = ApiResult.class)
     public ApiResult<Boolean> deleteSysDepartment(@PathVariable("id") Long id) throws Exception {
-            boolean flag = sysDepartmentService.deleteSysDepartment(id);
-            return ApiResult.result(flag);
+        boolean flag = sysDepartmentService.deleteSysDepartment(id);
+        return ApiResult.result(flag);
     }
 
     /**

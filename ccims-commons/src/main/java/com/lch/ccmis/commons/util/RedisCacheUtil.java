@@ -40,7 +40,7 @@ public class RedisCacheUtil {
      * 将当前对象赋值给静态对象,调用spring组件: redisCacheUtil.redisTemplate.xxx()
      */
     @PostConstruct
-    public void init(){
+    public void init() {
         redisCacheUtil = this;
     }
 }

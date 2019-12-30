@@ -35,7 +35,7 @@ public class RedisSubConfig {
      * @return
      */
     @Bean
-    public MessageListenerAdapter adapter(RedisMessage message){
+    public MessageListenerAdapter adapter(RedisMessage message) {
         // onMessage 如果RedisMessage 中 没有实现接口，这个参数必须跟RedisMessage中的读取信息的方法名称一样
         return new MessageListenerAdapter(message, "onMessage");
     }

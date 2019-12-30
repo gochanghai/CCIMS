@@ -29,20 +29,21 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
 /**
  * 枚举类型注解
+ *
  * @author geekidea
  * @date 2018-11-08
  */
 @Documented
-@Constraint(validatedBy = { EnumTypeValidator.class })
-@Target({ METHOD, FIELD, ANNOTATION_TYPE, CONSTRUCTOR, PARAMETER })
+@Constraint(validatedBy = {EnumTypeValidator.class})
+@Target({METHOD, FIELD, ANNOTATION_TYPE, CONSTRUCTOR, PARAMETER})
 @Retention(RUNTIME)
 public @interface EnumType {
-	String message() default "请输入正确的类型值";
+    String message() default "请输入正确的类型值";
 
-	Class<? extends BaseEnum> type();
+    Class<? extends BaseEnum> type();
 
-	Class<?>[] groups() default { };
+    Class<?>[] groups() default {};
 
-	Class<? extends Payload>[] payload() default { };
+    Class<? extends Payload>[] payload() default {};
 
 }

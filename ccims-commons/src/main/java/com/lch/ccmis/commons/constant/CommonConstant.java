@@ -18,6 +18,7 @@ package com.lch.ccmis.commons.constant;
 
 /**
  * 常量
+ *
  * @author geekidea
  * @date 2018-11-08
  */
