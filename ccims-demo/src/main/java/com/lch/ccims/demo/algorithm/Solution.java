@@ -130,10 +130,12 @@ public class Solution {
         int[] arrayA = new int[maxLength + 1];
         int[] arrayB = new int[maxLength + 1];
         for (int i = 0; i < bigNumberA.length(); i++) {
-            arrayA[i] = bigNumberA.charAt(bigNumberA.length() - 1 - i) - '0'; //“ - '0'”是将String型转化为int型
+            //“ - '0'”是将String型转化为int型
+            arrayA[i] = bigNumberA.charAt(bigNumberA.length() - 1 - i) - '0';
         }
         for (int i = 0; i < bigNumberB.length(); i++) {
-            arrayB[i] = bigNumberB.charAt(bigNumberB.length() - 1 - i) - '0'; //“ - '0'”是将String型转化为int型
+            //“ - '0'”是将String型转化为int型
+            arrayB[i] = bigNumberB.charAt(bigNumberB.length() - 1 - i) - '0';
         }
         //2.构建result数组，数组长度等于较大整数位数+1
         int[] result = new int[maxLength + 1];
