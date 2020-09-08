@@ -16,8 +16,8 @@
 
 package com.lch.ccmis.system.convert;
 
-import io.geekidea.springbootplus.system.entity.SysDepartment;
-import io.geekidea.springbootplus.system.vo.SysDepartmentTreeVo;
+import com.lch.ccmis.system.entity.SysDepartment;
+import com.lch.ccmis.system.vo.SysDepartmentTreeVo;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

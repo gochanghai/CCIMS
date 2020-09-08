@@ -16,9 +16,8 @@
 
 package com.lch.ccmis.system.convert;
 
-import io.geekidea.springbootplus.shiro.vo.LoginSysUserRedisVo;
-import io.geekidea.springbootplus.shiro.vo.LoginSysUserVo;
-import io.geekidea.springbootplus.system.entity.SysUser;
+import com.lch.ccmis.system.entity.SysUser;
+import com.lch.ccmis.system.vo.LoginSysUserVo;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

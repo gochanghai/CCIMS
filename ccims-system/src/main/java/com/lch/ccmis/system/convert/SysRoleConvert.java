@@ -16,8 +16,8 @@
 
 package com.lch.ccmis.system.convert;
 
-import io.geekidea.springbootplus.system.entity.SysRole;
-import io.geekidea.springbootplus.system.param.sysrole.AddSysRoleParam;
+import com.lch.ccmis.system.entity.SysRole;
+import com.lch.ccmis.system.param.sysrole.AddSysRoleParam;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

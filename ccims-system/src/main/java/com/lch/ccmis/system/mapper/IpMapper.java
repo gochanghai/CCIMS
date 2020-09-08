@@ -16,12 +16,12 @@
 
 package com.lch.ccmis.system.mapper;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import io.geekidea.springbootplus.system.entity.Ip;
-import io.geekidea.springbootplus.system.param.IpQueryParam;
-import io.geekidea.springbootplus.system.vo.IpQueryVo;
+import com.lch.ccmis.system.entity.Ip;
+import com.lch.ccmis.system.param.IpQueryParam;
+import com.lch.ccmis.system.vo.IpQueryVo;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 

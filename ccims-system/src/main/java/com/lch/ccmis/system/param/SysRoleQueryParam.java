@@ -22,8 +22,6 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
 
-import io.geekidea.springbootplus.common.param.OrderQueryParam;
-
 /**
  * <pre>
  * 系统角色 查询参数对象

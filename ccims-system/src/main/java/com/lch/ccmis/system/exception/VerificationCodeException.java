@@ -17,7 +17,6 @@
 package com.lch.ccmis.system.exception;
 
 import com.lch.ccmis.commons.exception.SpringBootPlusException;
-import io.geekidea.springbootplus.common.exception.SpringBootPlusException;
 
 /**
  * 验证码校验异常

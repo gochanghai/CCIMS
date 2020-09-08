@@ -19,7 +19,6 @@ package com.lch.ccmis.system.entity;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.lch.ccmis.commons.entity.BaseEntity;
-import io.geekidea.springbootplus.common.entity.BaseEntity;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;

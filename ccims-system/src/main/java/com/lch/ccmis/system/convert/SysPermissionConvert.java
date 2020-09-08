@@ -16,8 +16,8 @@
 
 package com.lch.ccmis.system.convert;
 
-import io.geekidea.springbootplus.system.entity.SysPermission;
-import io.geekidea.springbootplus.system.vo.SysPermissionTreeVo;
+import com.lch.ccmis.system.entity.SysPermission;
+import com.lch.ccmis.system.vo.SysPermissionTreeVo;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
