@@ -24,7 +24,7 @@ import org.mapstruct.factory.Mappers;
 /**
  * 系统角色转换器
  *
- * @author geekidea
+ * @author Changhai.liu
  * @date 2019-10-05
  **/
 @Mapper

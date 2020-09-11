@@ -26,7 +26,7 @@ import java.util.List;
 /**
  * 部门对象转换器
  *
- * @author geekidea
+ * @author Changhai.liu
  * @date 2019-11-01
  **/
 @Mapper

@@ -24,7 +24,7 @@ import org.mapstruct.factory.Mappers;
 /**
  * SysPermission类相关转换
  *
- * @author geekidea
+ * @author Changhai.liu
  * @date 2019-10-26
  **/
 @Mapper
