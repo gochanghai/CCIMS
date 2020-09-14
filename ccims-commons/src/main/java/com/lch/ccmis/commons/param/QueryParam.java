@@ -16,7 +16,7 @@
 
 package com.lch.ccmis.commons.param;
 
-import io.geekidea.springbootplus.constant.CommonConstant;
+import com.lch.ccmis.commons.constant.CommonConstant;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;

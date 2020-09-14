@@ -16,8 +16,8 @@
 
 package com.lch.ccmis.commons.exception;
 
-import io.geekidea.springbootplus.common.api.ApiCode;
-import io.geekidea.springbootplus.common.api.ApiResult;
+import com.lch.ccmis.commons.api.ApiCode;
+import com.lch.ccmis.commons.api.ApiResult;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.web.servlet.error.ErrorController;
 import org.springframework.web.bind.annotation.RequestMapping;

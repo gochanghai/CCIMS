@@ -17,6 +17,7 @@
 package com.lch.ccmis.commons.exception;
 
 import com.alibaba.fastjson.JSON;
+import com.google.common.collect.Lists;
 import com.lch.ccmis.commons.api.ApiCode;
 import com.lch.ccmis.commons.api.ApiResult;
 import lombok.extern.slf4j.Slf4j;
@@ -54,7 +55,7 @@ public class GlobalExceptionHandler {
     @ResponseStatus(value = HttpStatus.OK)
     public ApiResult handleMethodArgumentNotValidExceptionHandler(MethodArgumentNotValidException ex) {
         BindingResult bindingResult = ex.getBindingResult();
-        List<String> list = new ArrayList<>();
+        List<String> list = Lists.newArrayList();
         List<FieldError> fieldErrors = bindingResult.getFieldErrors();
         for (FieldError fieldError : fieldErrors) {
             list.add(fieldError.getDefaultMessage());
