@@ -29,7 +29,7 @@
         <spring-boot-dependencies.version>2.1.9.RELEASE</spring-boot-dependencies.version>
         <spring-cloud-alibaba-dependencies.version>2.1.1.RELEASE</spring-cloud-alibaba-dependencies.version>
         <spring-cloud-dependencies.version>Greenwich.SR4</spring-cloud-dependencies.version>
-        <mysql-connector.version>8.0.16</mysql-connector.version>
+        <mysql-connector.version>8.0.28</mysql-connector.version>
         <mybatis-plus.version>3.3.0</mybatis-plus.version>
         <druid.version>1.1.10</druid.version>
         <fastjson.version>1.2.47</fastjson.version>
